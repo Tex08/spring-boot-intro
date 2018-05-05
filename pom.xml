@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>spring-boot-first-web-application</name>
-	<description>Demo project for Spring Boot</description>
+	<description>My first Spring Boot project (in28Minutes)</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -30,11 +30,17 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -50,6 +56,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>
