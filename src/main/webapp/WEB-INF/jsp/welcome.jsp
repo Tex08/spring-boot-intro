@@ -4,7 +4,7 @@
 </head>
 <body>
 
-Welcome ${name}!
+Welcome ${name}! <a href="/list-todos">Click here</a> to manage your todos
 
 </body>
 </html>
