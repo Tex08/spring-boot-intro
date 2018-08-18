@@ -1,28 +1,5 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-
-<html>
-
-<head>
-<title>Todos for ${name}</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	        rel="stylesheet">
-</head>
-
-<body>
-    <nav role="navigation" class="navbar navbar-default">
-        <div class="">
-            <a href="http://www.in28minutes.com" class="navbar-brand">TexCo</a>
-        </div>
-        <div class="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/login">Home</a></li>
-                <li><a href="/list-todos">Todos</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
+<%@include file="common/header.jspf"%>
+<%@include file="common/navigation.jspf"%>
     <div class="container">
         <table class="table table-striped">
             <caption>Your todos are</caption>
@@ -48,10 +25,5 @@
             </tbody>
         </table>
         <div> <a class="button" href="/add-todo">Add a Todo</a> </div>
-
-        <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-        <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </div>
-</body>
-
-</html>
+<%@include file="common/footer.jspf"%>

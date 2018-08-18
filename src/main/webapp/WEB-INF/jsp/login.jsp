@@ -1,16 +1,12 @@
-<html>
-<head>
-<title>TexCo. App</title>
-</head>
-<body>
+<%@include file="common/header.jspf"%>
+<%@include file="common/navigation.jspf"%>
 
-<font color = "red">${Emessage}</font>
-<form method="post">
-    Name: <input type="text" name="name" />
-    Password: <input type="password" name="password" />
-    <input type="submit" />
-</form>
-
-<!--My first JSP! Welcome to my site ${name} -->
-</body>
-</html>
+<div class="container">
+    <font color = "red">${Emessage}</font>
+    <form method="post">
+        Name: <input type="text" name="name" />
+        Password: <input type="password" name="password" />
+        <input type="submit" />
+    </form>
+</div>
+<%@include file="common/footer.jspf"%>
